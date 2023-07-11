@@ -5,8 +5,6 @@ const con=mysql.createConnection({
     password:process.env.DB_PASSWORD,
     database:process.env.DB_DATABASE,
 })
-
-
 con.connect((err,result)=>{
 if (err) throw err;
 else{

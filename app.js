@@ -3,14 +3,14 @@ const app=express();
 const dotenv= require ('dotenv');
 dotenv.config({path:'./config.env'});
 const router=express.Router();
-const productrouter=require('./routes/product');
-const userrouter= require('./routes/user')
+const productrouter=require('./views/routes/product');
+const userrouter= require('./views/routes/user');
 const bodyParser=require('body-parser');
 const session=require('express-session');
 const cookieParser=require('cookie-parser');
 const flash=require('connect-flash');
 const PORT=process.env.PORT;
-const con=require('./connection');
+const con=require('./views/connection');
 //////////////////////////////////////////////////////////
 
 app.set('view engine','ejs');
@@ -26,34 +26,6 @@ app.use(session({
 app.use(flash());
 
 
-// app.use((req,res,next)=>{
-//     if(req.cookies.userid && !req.session.user){
-//         res.clearCookie('userid');
-//     }
-//     next();
-// })
-
-
-
-
-//////////////////////////////////////////////////////////////////
-//middleware function to check for loggedin user
-
-// var sessionChecker=(req,res,next)=>{
-//     if(req.cookie,userid && !req.session.user){
-//         console.log('id does not match');
-//         res.redirect('/login');
-//     }
-//     else{
-//         next();
-//     }
-// };
-
-
-// router.get('/',(req,res)=>{
-//     res.render('./dashboard');
-// })
-//////////////////////////////////////////////////////////////
 
 app.use('/',router);
 app.use('/',productrouter);
