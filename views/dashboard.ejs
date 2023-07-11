@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./common/head.ejs') %>
+<body class="background">
+    <section class="dashboard">
+    <div class="container-fluid">
+        <div class="d-flex flex-column flex-sm-row  my-2">
+            <% if(session.userid) {  %>    
+               <h2 class="  p-md-3 text-white fw-bold"><i class="fa fa-user text-warning" aria-hidden="true"></i>  Welcome <%= session.userid %>  !</h2>
+               <a href="/logout" class="btn   fs-3 fw-bold  text-white ms-auto ">Logout</a>               
+                <% } %>
+        </div>
+   
+   <div class="center ">
+    <button class="btn"><a href="/viewuser" class="display-4 fw-bold m-3  px-2 px-md-5 text-white rounded text-decoration-none ">Manage User Profile</a></button>
+</div>
+    
+    
+</div>
+<!-- //container:end    -->
+
+</section>
+
+
+
+
+
+</body>
+</html>

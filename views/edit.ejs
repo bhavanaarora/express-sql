@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<%- include('./common/head.ejs') %>
+<body class="background">
+    <section class="login">
+    <div class="container   my-5">
+   
+    <div class="row d-flex justify-content-center fs-5 ">
+        <div class="col-12 col-lg-6 col-xxl-4">
+            <h3 class="text-center  text-white fs-2 fw-bold p-3">User SignUp</h1>
+             
+            <form method="POST"  class='my-5'>
+                <% let i=0;%>
+                           <div class="form-group">
+                <label class="form-label fs-4 fw-bold">First Name</label>
+                <input type="text" class="form-control capitalCase" name="firstname" value='<%=data[i].firstname %>'>
+               </div>
+               <div class="form-group">
+                <label class="form-label fs-4 fw-bold">Last Name</label>
+                <input type="text" class="form-control capitalCase"  name="lastname" value='<%=data[i].lastname %>'>
+               </div> 
+               <div class="form-group">
+                <label class="form-label fs-4 fw-bold">EMail</label>
+                <input type="email" class="form-control" name="email" value='<%=data[i].email %>'>
+               </div> 
+               
+                <div class="form-group">
+                <label class="form-label fs-4 fw-bold">Mobile</label>
+                <input type="text" class="form-control" name="mobile" value='<%=data[i].mobile %>'placeholder="Mobile must have 10 digits">
+               </div>
+
+               <div class="d-grid gap-2 my-3 ">
+               <button type="submit" name="submit" class=" text-white fs-4 fw-bold">Update</button>
+               <button type="reset" name="reset" class=" text-white fs-4 fw-bold" >Reset</button>
+               <button type="button" name="reset"><a href="/viewuser" class=" text-warning fs-4 fw-bold">Back</a></button>
+               </div>
+                
+
+              
+
+            </form>
+        </div>
+    </div>
+   </div>
+</section>
+   
+
+
+
+
+
+
+</body>
+</html>

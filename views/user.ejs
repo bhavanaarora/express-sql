@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<%- include('./common/head.ejs') %>
+<body class="background">
+   <section class="login">
+    <div class="container   my-5">
+   <!-- <button><a href="/dashboard">Back</a></button> -->
+    <div class="row d-flex justify-content-center fs-5 ">
+        <div class="col-12 col-lg-6 col-xxl-4">
+            <h3 class="text-center  text-white fs-2 fw-bold p-3">User SignUp</h3>
+             
+            <form method="POST" action="/adduser" class='my-5'>
+                           <div class="form-group">
+                <label class="form-label fs-4 fw-bold">First Name</label>
+                <input type="text" class="form-control capitalCase" name="firstname">
+               </div>
+               <div class="form-group">
+                <label class="form-label fs-4 fw-bold">Last Name</label>
+                <input type="text" class="form-control capitalCase"  name="lastname">
+               </div> 
+               <div class="form-group">
+                <label class="form-label fs-4 fw-bold">EMail</label>
+                <input type="email" class="form-control" name="email">
+               </div> 
+               <div class="form-group">
+                <label class="form-label fs-4 fw-bold">Password</label>
+                <input type="password" class="form-control" name="password">
+               </div> 
+                <div class="form-group">
+                <label class="form-label fs-4 fw-bold">Mobile</label>
+                <input type="text" class="form-control" name="mobile" placeholder="Mobile must have 10 digits">
+               </div>
+
+               <div class="d-grid gap-2 my-3 ">
+               <button type="submit" name="submit" class=" text-white fs-4 fw-bold">Submit</button>
+               <button type="reset" name="reset" class=" text-white fs-4 fw-bold" >Reset</button>
+               <button type="button" name="login" class="  fs-4 fw-bold"><a  class=" text-warning text-decoration-none" href="/login">Existing User</a></button>
+               </div>
+                
+               <!-- <div class="d-flex justify-content-end">
+                <a href="login">Existing User</a>
+               </div> -->
+
+              
+               <% if(username != '') { %>
+                <h5 class="text-white fw-bold fs-5">Hello <%= username%>! Your Form Has Submitted.</h5>
+             
+                <div class="container-fluid">
+                <div class="row">
+                <%- include('./dashboard.ejs')%>
+              </div>
+              </div>
+
+
+                <% }else if(username2  > 0){ %>
+                
+                <h5 class="text-white fw-bold fs-5">User Already Exist!</h5>
+                
+                <% }else if(data == 'true'){ %>
+                    <h5 class="text-white fw-bold fs-5">Plz Enter Correct Details!</h5>
+                                       
+                <% } %>
+                 
+
+            </form>
+        </div>
+    </div>
+   </div>
+</section>
+   
+
+
+
+
+
+
+</body>
+</html>
