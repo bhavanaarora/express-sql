@@ -45,15 +45,12 @@ Admin dashboards page
 2-Admin Products Module listing/Add/Edit/Delete pages
 
 
-
-
 ### Screenshots:
 
+![Screenshot (353)](https://github.com/bhavanaarora/express-sql/assets/73920822/bb1f17ef-c1bc-4a94-94fd-6b4ef36da27f)
 
-![Screenshot (353)](https://github.com/bhavanaarora/express-sql/assets/73920822/dfdfbf1a-856f-4df7-9133-c1783032d933)
+![Screenshot (350)](https://github.com/bhavanaarora/express-sql/assets/73920822/f8e9a244-7761-4ed9-b413-ba438297ad5a)
 
-![Screenshot (350)](https://github.com/bhavanaarora/express-sql/assets/73920822/0df50012-9b0c-4a47-bd03-0547b480901f)
+![Screenshot (351)](https://github.com/bhavanaarora/express-sql/assets/73920822/d5b3f758-3e21-48e9-907e-201ad9d34b1c)
 
-![Screenshot (351)](https://github.com/bhavanaarora/express-sql/assets/73920822/ecbf6f1f-6a91-4f27-ad30-bfc724d5185e)
-
-![Screenshot (352)](https://github.com/bhavanaarora/express-sql/assets/73920822/ec64464c-ea16-486c-a94d-ad9aac600026)
+![Screenshot (352)](https://github.com/bhavanaarora/express-sql/assets/73920822/3c3637a5-8173-4fff-99f5-8d68031d6579)
