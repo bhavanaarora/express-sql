@@ -33,6 +33,7 @@
   body{
     font-family:var(--font-default) ;
     color:var(--color-default);
+   
   }
 
 /*--------------------------------------------------------------
@@ -42,28 +43,6 @@
 .header{
   background-color:var(--color-primary);
 }
-
-/* .header a{
-  background-color: #198f81;
-  font-size:22px;
-  font-weight:bolder;
-  transition:0.3s;
-}
-
-.header a:hover{
-  background-color:#007568;  
-  font-size:24px;
-  text-decoration-line:underline;
-  text-underline-offset:15px;
-  text-decoration-thickness:4px;
-  text-decoration-color: var(--color-secondary);
- 
-}
-.header a:hover:before{
-  transition: all 0.3s ease-in-out 0s;
-} */
-
-
 
 /*================================================*/
 .header a {
